@@ -4,6 +4,7 @@
 #include "axmol.h"
 #include "FairyGUI.h"  // Inclua o header correto para FairyGUI
 USING_NS_FGUI;
+
 class MainMenuScene : public ax::Scene
 {
 public:
@@ -16,8 +17,8 @@ public:
     CREATE_FUNC(MainMenuScene);
 
 private:
- 
-    fairygui::GComponent* menuComponent;
+    GRoot* _groot;
+    GComponent* menuComponent;
 };
 
 #endif  

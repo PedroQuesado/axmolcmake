@@ -19,17 +19,12 @@ bool MainMenuScene::init()
     {
         return false;
     }
-
+    _groot = GRoot::create(this);
+    _groot->retain();
     // Certifique-se de que o pacote FairyGUI foi carregado corretamente
     UIPackage::addPackage("MainMenu");
-
-    // Criar o componente principal do menu a partir do pacote
     menuComponent = UIPackage::createObject("MainMenu", "Component1")->as<GComponent>();
-    if (!menuComponent)
-    {
-        AXLOG("Falha ao criar menuComponent");
-        return false;
-    }
+    _groot->addChild(menuComponent);
 
   //  auto visibleSize = Director::getInstance()->getVisibleSize();
    // menuComponent->setPosition(800, 400 );
