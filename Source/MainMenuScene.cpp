@@ -34,7 +34,7 @@ bool MainMenuScene::init()
   //  auto visibleSize = Director::getInstance()->getVisibleSize();
    // menuComponent->setPosition(800, 400 );
 
-    GRoot::getInstance()->addChild(menuComponent);
+   UIRoot->addChild(menuComponent); 
 
     // Obter referência aos botões e configurar eventos de clique
   
