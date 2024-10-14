@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0ujt05z3">
+  <resources>
+    <component id="rvnh0" name="Component1.xml" path="/" exported="true"/>
+    <image id="k3f11" name="imagem.png" path="/"/>
+  </resources>
+  <publish name="" path="C:\Users\paqa\source\repos\axmolcmake\Content" packageCount="2" branchPath="C:\Users\paqa\source\repos\axmolcmake\Content"/>
+</packageDescription>

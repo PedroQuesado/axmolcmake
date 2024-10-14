@@ -24,7 +24,7 @@ bool MainMenuScene::init()
     UIPackage::addPackage("MainMenu");
 
     // Criar o componente principal do menu a partir do pacote
-    menuComponent = UIPackage::createObject("MainMenu", "MainMenuComponent")->as<GComponent>();
+    menuComponent = UIPackage::createObject("MainMenu", "Component1")->as<GComponent>();
     if (!menuComponent)
     {
         AXLOG("Falha ao criar menuComponent");
